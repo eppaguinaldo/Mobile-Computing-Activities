@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/item"
+        android:src="@drawable/item"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X1 and Y1"
+        android:id="@+id/point1"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="152dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X2 and Y2"
+        android:id="@+id/point2"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:layout_alignTop="@+id/point1"
+        android:layout_alignLeft="@+id/point1"
+        android:layout_alignStart="@+id/point1"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIfference"
+        android:id="@+id/dif"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/point2"
+        android:layout_alignRight="@+id/point2"
+        android:layout_alignEnd="@+id/point2"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motion"
+        android:id="@+id/mot"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/dif"
+        android:layout_alignLeft="@+id/dif"
+        android:layout_alignStart="@+id/dif"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quadrant"
+        android:id="@+id/quad"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/mot"
+        android:layout_alignLeft="@+id/mot"
+        android:layout_alignStart="@+id/mot" />
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/p1TextView"
+        android:background="@drawable/android_edittxt"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignTop="@+id/point1"
+        android:layout_toRightOf="@+id/point1"
+        android:layout_toEndOf="@+id/point1" />
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/p2TextView"
+        android:background="@drawable/android_edittxt"
+        android:layout_alignTop="@+id/point2"
+        android:layout_alignLeft="@+id/p1TextView"
+        android:layout_alignStart="@+id/p1TextView" />
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/difeTextView"
+        android:background="@drawable/android_edittxt"
+        android:layout_alignTop="@+id/dif"
+        android:layout_alignLeft="@+id/p2TextView"
+        android:layout_alignStart="@+id/p2TextView" />
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/motiTextView"
+        android:background="@drawable/android_edittxt"
+        android:layout_alignTop="@+id/mot"
+        android:layout_alignLeft="@+id/difeTextView"
+        android:layout_alignStart="@+id/difeTextView" />
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/quadraTextView"
+        android:background="@drawable/android_edittxt"
+        android:layout_below="@+id/mot"
+        android:layout_alignRight="@+id/motiTextView"
+        android:layout_alignEnd="@+id/motiTextView" />
+
+</RelativeLayout>
